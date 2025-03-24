@@ -30,6 +30,7 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+
 body {
   background-color: hsl(202, 12%, 36%);
   background-image: url("/src/assets/Background.png");
@@ -95,7 +96,6 @@ a {
 
 .home__container {
   position: relative;
-  height: 100lvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,7 +157,7 @@ a {
   );
   width: 300px;
   height: 100px;
-  margin-top: 90px;
+  margin-top: 10%;
   outline: 5px solid black;
   cursor: pointer;
   display: flex;
@@ -198,13 +198,12 @@ a {
 
   transform: scale(80%);
 }
-
-/*Footer*/
 .home__characters img {
   width: 450px;
   object-fit: contain;
   filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5)); /* Sombra suave */
 }
+/*Footer*/
 
 .footer__container {
   background-color: rgb(3, 3, 3);
@@ -213,6 +212,7 @@ a {
   height: 100px;
   outline: 2px solid black;
   margin-top: 50px;
+  position: absolute;
 }
 .footer__container p {
   padding: 20px;
