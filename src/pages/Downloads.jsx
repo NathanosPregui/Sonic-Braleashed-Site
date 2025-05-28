@@ -14,7 +14,7 @@ const Downloads = () => {
       <div className='downloads__container' target='_blank'>
         <h1 className='downloads__title'>Downloads</h1>
 
-        <a href='/'>
+        <a href='https://gamebanana.com/wips/92406'>
           <div className='downloads__download-btn'>
             <h1>Download do Mod</h1>
           </div>
@@ -24,7 +24,7 @@ const Downloads = () => {
             <h1>HedgeModManager</h1>
           </div>
         </a>
-        <div className='downlods__imagetails'>
+        <div className='downloads__imagetails'>
           <img src={tailsImage2} alt='' />
         </div>
       </div>
