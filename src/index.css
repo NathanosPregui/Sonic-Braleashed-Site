@@ -359,6 +359,9 @@ a {
 
 /* Mobile */
 @media (max-width: 768px) {
+  .header{
+    overflow-x: scroll;
+  }
   /* Body */
   body {
     background-position: center center;
