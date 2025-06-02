@@ -315,6 +315,45 @@ a {
   object-fit: contain;
   filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5)); /* Sombra suave */
 }
+/* Sobre */
+
+.sobre__titulologo {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sobre__titulologo img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+.sobre__text {
+  width: 100%;
+  color: white;
+  font-size: 30px;
+  text-align: justify;
+  padding: 20px;
+  padding-left: 500px;
+  padding-right: 500px;
+  text-shadow: 2px 2px black;
+  background: linear-gradient(
+    0deg,
+    rgba(42, 123, 155, 0) 0%,
+    rgba(0, 0, 0, 0.486) 7%,
+    rgba(0, 0, 0, 0.486) 97%,
+    rgba(0, 0, 0, 0.486) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.sobre__link a {
+  color: green;
+}
+.sobre__link a:hover {
+  color: rgb(6, 165, 6);
+  text-decoration: underline;
+}
 
 /* PC monitores pequenos */
 @media (max-width: 1366px) {
@@ -324,17 +363,24 @@ a {
   .home__characters img {
     transform: scaleX(-1);
   }
-   /* Downloads */
-  .downloads__imagetails{
-     right: 0px;
-     overflow: hidden;
+  /* Downloads */
+  .downloads__imagetails {
+    right: 0px;
+    overflow: hidden;
   }
-  .downloads__imagetails img{
+  .downloads__imagetails img {
     transform: translateX(5px);
   }
+  /* Sobre */
+
+  .sobre__text {
+    padding: 100px;
+    font-size: 30px;
+  }
 }
+
 @media (max-width: 1024px) {
-  .home__characters{
+  .home__characters {
     overflow: hidden;
   }
   .home__characters img {
@@ -349,20 +395,25 @@ a {
   .home__characters {
     padding: 0;
   }
-   /* Downloads */
-  .downloads__imagetails{
-     right: 0px;
-     overflow: hidden;
+  /* Downloads */
+  .downloads__imagetails {
+    right: 0px;
+    overflow: hidden;
   }
-  .downloads__imagetails img{
+  .downloads__imagetails img {
     transform: translateX(100px);
   }
- 
+  /* Sobre */
+
+  .sobre__text {
+    padding: 100px;
+    font-size: 30px;
+  }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .header{
+  .header {
     overflow-x: scroll;
   }
   /* Body */
@@ -398,7 +449,7 @@ a {
     display: none;
   }
   /* Downloads */
-  .downloads__container{
+  .downloads__container {
     padding-left: 0px;
     padding: 20px;
     display: flex;
@@ -408,21 +459,27 @@ a {
   .downloads__imagetails {
     display: none;
   }
-  .downloads__container a{
+  .downloads__container a {
     width: 100%;
     padding: 0px;
   }
-  .downloads__download-btn{
+  .downloads__download-btn {
     width: 100%;
     height: 100%;
-   
   }
-  .downloads__download-btn h1{
+  .downloads__download-btn h1 {
     font-size: 30px;
-   
   }
-  .downloads__title{
+  .downloads__title {
     text-align: center;
     width: 100%;
+  }
+  /* Sobre */
+  .sobre__titulologo {
+    height: 150px;
+  }
+  .sobre__text {
+    padding: 30px;
+    font-size: 20px;
   }
 }
